@@ -68,9 +68,9 @@ export default {
   },
 
   mounted() {
-    fetch("http://localhost:1337/api/projects/data")
+    fetch("https://strapi-sqmn.onrender.com/api/projects?populate=*")
       .then(res => res.json())
-      .then(data => this.projects = data)
+      .then(data => this.projects = data.data)
       .catch(err => console.log(err.message))
   },
 
@@ -103,9 +103,7 @@ export default {
 
 
 <style>
-#main-container{
-  
-}
+
 
 #nav-container {
   width: 100%;
