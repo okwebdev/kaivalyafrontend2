@@ -1,18 +1,36 @@
 <template>
 
-    <video v-if="active" autoplay muted loop id="myVideo">
+    <!-- <video v-if="active" autoplay muted loop id="myVideo">
         <source :src="video" type="video/mp4">
-      </video>
+      </video> -->
+
+    <!-- <video
+
+    :key="src"
+    :width="width"
+    controls
+  >
+    <source
+      :src="src"
+      :type="type"
+    >
+  </video> -->
+
+
+  <video autoplay muted loop id="myVideo">
+    <source  src="../assets/video/kaivalya-background.mp4" type="video/mp4">
+  </video>
 
   </template>
     
   <script>
-    import video from "/Users/oscarkhan/repos/kaivalya_website/kaivalya_vue/src/assets/video/kaivalya-background.mp4"
+    // import video from "kaivalyafrontend/src/assets/video/kaivalya-background.mp4"
     
     export default {
         data() { 
             return {
-                video: video,
+                // src:"https://player.vimeo.com/video/852067414",
+                // video: video,
                 active: true
             }
         },

@@ -1,6 +1,7 @@
 <template>
   <div class="app-container" :class="{ grid: isGrid}">
     <div class="main">
+      
       <MainLogo id="logo" @toggle="toggleSplash()"></MainLogo>
 
 
